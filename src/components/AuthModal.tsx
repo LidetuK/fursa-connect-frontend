@@ -177,3 +177,4 @@ const AuthModal: React.FC<AuthModalProps> = ({ open, onOpenChange, selectedPacka
 };
 
 export default AuthModal;
+// adding comments so i can push
