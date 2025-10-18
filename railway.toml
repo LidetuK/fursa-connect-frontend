@@ -1,0 +1,10 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+healthcheckPath = "/health.html"
+healthcheckTimeout = 300
+
+[env]
+NODE_ENV = "production"
+PORT = "80" 

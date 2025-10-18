@@ -1,0 +1,45 @@
+# Build stage
+FROM node:18-alpine AS builder
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including devDependencies for build)
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Ensure health.html is copied
+RUN chmod +x copy-health.sh && ./copy-health.sh
+
+# Production stage
+FROM nginx:alpine AS production
+
+# Copy built files from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Copy nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy startup script
+COPY start.sh /start.sh
+
+# Ensure proper file permissions
+RUN chmod -R 755 /usr/share/nginx/html && \
+    chmod +x /start.sh
+
+# Create nginx pid directory
+RUN mkdir -p /var/run/nginx
+
+# Expose port
+EXPOSE 80
+
+# Start using the startup script
+CMD ["/start.sh"] 

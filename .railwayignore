@@ -1,0 +1,40 @@
+# Completely ignore backend and supabase directories
+social-media-backend/
+supabase/
+
+# Ignore all SQL files
+*.sql
+
+# Ignore all backend-related JavaScript files
+fix_*.js
+generate_*.js
+update_*.js
+
+# Ignore backend configuration files
+social-media-backend/railway.toml
+social-media-backend/package.json
+social-media-backend/package-lock.json
+social-media-backend/tsconfig.json
+social-media-backend/tsconfig.build.json
+social-media-backend/nest-cli.json
+social-media-backend/.nvmrc
+social-media-backend/.prettierrc
+social-media-backend/eslint.config.mjs
+
+# Ignore backend source files
+social-media-backend/src/
+social-media-backend/test/
+social-media-backend/uploads/
+social-media-backend/dist/
+social-media-backend/node_modules/
+
+# Ignore backend environment files
+social-media-backend/.env*
+
+# Ignore supabase functions (Deno files)
+supabase/functions/
+supabase/migrations/
+supabase/config.toml
+
+# Ignore any other backend-related files
+social-media-backend/**/* 
