@@ -61,10 +61,10 @@ const TwitterCallback = () => {
               console.log('Checking connection status...');
               await checkConnectionStatus();
               console.log('Redirecting to dashboard...');
-              navigate('/dashboard/social');
+              navigate('/dashboard');
             } catch (error) {
               console.error('Error refreshing social accounts:', error);
-              navigate('/dashboard/social');
+              navigate('/dashboard');
             }
           }, 2000);
           
@@ -154,7 +154,7 @@ const TwitterCallback = () => {
   }, [navigate, toast, checkConnectionStatus, loadUserSocialAccounts, searchParams]);
 
   const handleReturnToDashboard = () => {
-    navigate('/dashboard/social');
+    navigate('/dashboard');
   };
 
   return (
