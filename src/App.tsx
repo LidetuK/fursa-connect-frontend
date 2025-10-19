@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import DataDeletion from "./pages/DataDeletion";
 import TwitterCallback from '@/pages/twitter/callback';
+import YoutubeAuthCallback from './pages/YoutubeAuthCallback';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import SMERegistry from "./pages/SMERegistry";
 import Cookies from "./pages/Cookies";
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/auth" element={<SignIn />} />
                 <Route path="/auth/social-callback" element={<SocialAuthCallback />} />
                 <Route path="/auth/facebook/callback" element={<FacebookAuthCallback />} />
+                <Route path="/auth/youtube/callback" element={<YoutubeAuthCallback />} />
                 <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
                 <Route path="/expert-dashboard" element={<ProtectedRoute><ExpertDashboard /></ProtectedRoute>} />
                 <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />

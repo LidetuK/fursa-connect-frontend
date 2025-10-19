@@ -35,6 +35,7 @@ const SocialMediaConnector = () => {
     { platform: 'instagram', label: 'Instagram' },
     { platform: 'twitter', label: 'Twitter' },
     { platform: 'linkedin', label: 'LinkedIn' },
+    { platform: 'youtube', label: 'YouTube' },
     { platform: 'telegram', label: 'Telegram' },
   ];
 
@@ -197,7 +198,7 @@ const SocialMediaConnector = () => {
               return (
                 <SocialMediaCard
                   key={platform}
-                  platform={platform as "facebook" | "instagram" | "twitter" | "linkedin"}
+                  platform={platform as "facebook" | "instagram" | "twitter" | "linkedin" | "youtube"}
                   connected={connected}
                   username={username}
                   onConnect={connectAccount}
