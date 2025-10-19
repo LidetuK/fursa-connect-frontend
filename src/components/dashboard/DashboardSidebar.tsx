@@ -74,7 +74,8 @@ const DashboardSidebar = ({ services, packageType, activeSection, onSectionChang
       id: 'web-dev',
       title: 'Web Development',
       icon: <Code className="w-5 h-5" />,
-      hasSubItems: false
+      hasSubItems: false,
+      hidden: true
     },
     {
       id: 'seo',
@@ -93,13 +94,15 @@ const DashboardSidebar = ({ services, packageType, activeSection, onSectionChang
       id: 'google-ads',
       title: 'Google Ads',
       icon: <Target className="w-5 h-5" />,
-      hasSubItems: false
+      hasSubItems: false,
+      hidden: true
     },
     {
       id: 'meta-ads',
       title: 'Meta Ads',
       icon: <Facebook className="w-5 h-5" />,
-      hasSubItems: false
+      hasSubItems: false,
+      hidden: true
     },
     {
       id: 'google-business',

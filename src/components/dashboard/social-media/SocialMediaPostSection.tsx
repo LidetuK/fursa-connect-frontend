@@ -16,7 +16,10 @@ const SocialMediaPostSection = () => {
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState<File[]>([]);
   const [imagePreviews, setImagePreviews] = useState<string[]>([]);
+  const [videos, setVideos] = useState<File[]>([]);
+  const [videoPreviews, setVideoPreviews] = useState<string[]>([]);
   const MAX_IMAGE_SIZE_MB = 5;
+  const MAX_VIDEO_SIZE_MB = 50;
   const [linkedinOrganizations, setLinkedinOrganizations] = useState<{ urn: string, id: string, name: string }[]>([]);
   const [selectedOrganization, setSelectedOrganization] = useState<string>('personal');
 
@@ -74,6 +77,33 @@ const SocialMediaPostSection = () => {
     setImagePreviews(prev => prev.filter((_, i) => i !== idx));
   };
 
+  const handleVideoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      const filesArr = Array.from(e.target.files);
+      const validFiles: File[] = [];
+      const previews: string[] = [];
+      for (const file of filesArr) {
+        if (!file.type.startsWith('video/')) {
+          toast({ title: 'Invalid file', description: `${file.name} is not a video.`, variant: 'destructive' });
+          continue;
+        }
+        if (file.size > MAX_VIDEO_SIZE_MB * 1024 * 1024) {
+          toast({ title: 'File too large', description: `${file.name} exceeds ${MAX_VIDEO_SIZE_MB}MB.`, variant: 'destructive' });
+          continue;
+        }
+        validFiles.push(file);
+        previews.push(URL.createObjectURL(file));
+      }
+      setVideos(validFiles);
+      setVideoPreviews(previews);
+    }
+  };
+
+  const handleRemoveVideo = (idx: number) => {
+    setVideos(prev => prev.filter((_, i) => i !== idx));
+    setVideoPreviews(prev => prev.filter((_, i) => i !== idx));
+  };
+
   const handlePost = async () => {
     if (!selectedPlatform) {
       toast({ title: "Select a platform", description: "Please select a connected platform to post to.", variant: "destructive" });
@@ -119,6 +149,49 @@ const SocialMediaPostSection = () => {
         toast({ title: "Posted!", description: "Your post was sent to LinkedIn." });
         setPostText('');
         setImages([]);
+      } else if (selectedPlatform === 'telegram') {
+        if (!user) throw new Error('You must be logged in to post to Telegram.');
+        
+        // Handle videos first (Telegram prioritizes videos over images)
+        if (videos.length > 0) {
+          const formData = new FormData();
+          formData.append('userId', user.id.toString());
+          if (postText.trim()) formData.append('caption', postText);
+          videos.forEach((video, idx) => formData.append('videos', video));
+          
+          const response = await fetch('https://fursaconnet-production.up.railway.app/telegram/send-video', {
+            method: 'POST',
+            credentials: 'include',
+            body: formData,
+          });
+          if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Failed to post video to Telegram');
+          }
+        } else {
+          // Handle images or text only
+          const formData = new FormData();
+          formData.append('userId', user.id.toString());
+          formData.append('text', postText);
+          if (images.length > 0) {
+            images.forEach((img, idx) => formData.append('images', img));
+          }
+          
+          const response = await fetch('https://fursaconnet-production.up.railway.app/telegram/send', {
+            method: 'POST',
+            credentials: 'include',
+            body: formData,
+          });
+          if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Failed to post to Telegram');
+          }
+        }
+        
+        toast({ title: "Posted!", description: "Your post was sent to Telegram." });
+        setPostText('');
+        setImages([]);
+        setVideos([]);
       } else {
         toast({ title: "Not implemented", description: "Posting to this platform is not yet supported.", variant: "destructive" });
       }
@@ -178,6 +251,25 @@ const SocialMediaPostSection = () => {
               </div>
             )}
           </div>
+          {selectedPlatform === 'telegram' && (
+            <div>
+              <label className="block mb-2 font-medium">Upload video(s) (Telegram only:</label>
+              <input
+                type="file"
+                accept="video/*"
+                multiple
+                onChange={handleVideoChange}
+                className="mb-2"
+              />
+              {videos.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {videos.map((video, idx) => (
+                    <span key={idx} className="text-xs bg-blue-200 px-2 py-1 rounded">{video.name}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
           {selectedPlatform === 'linkedin' && linkedinOrganizations.length > 0 && (
             <div>
               <label className="block mb-2 font-medium">Post as:</label>
@@ -208,6 +300,23 @@ const SocialMediaPostSection = () => {
                     onClick={() => handleRemoveImage(idx)}
                     className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs"
                     title="Remove image"
+                  >
+                    ×
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+          {videoPreviews.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-2">
+              {videoPreviews.map((src, idx) => (
+                <div key={idx} className="relative w-20 h-20">
+                  <video src={src} className="object-cover w-full h-full rounded border" />
+                  <button
+                    type="button"
+                    onClick={() => handleRemoveVideo(idx)}
+                    className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs"
+                    title="Remove video"
                   >
                     ×
                   </button>

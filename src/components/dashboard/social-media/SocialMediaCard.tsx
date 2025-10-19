@@ -2,15 +2,15 @@
 import { useState } from 'react';
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Youtube, MessageCircle } from 'lucide-react';
 
 interface SocialMediaCardProps {
-  platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube';
+  platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube' | 'telegram';
   connected: boolean;
   username: string;
   loading?: boolean;
-  onConnect: (platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube') => void;
-  onDisconnect: (platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube') => void;
+  onConnect: (platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube' | 'telegram') => void;
+  onDisconnect: (platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube' | 'telegram') => void;
 }
 
 export const SocialMediaCard = ({ 
@@ -34,6 +34,8 @@ export const SocialMediaCard = ({
         return <Linkedin size={size} className="text-[#0077B5]" />;
       case 'youtube':
         return <Youtube size={size} className="text-[#FF0000]" />;
+      case 'telegram':
+        return <MessageCircle size={size} className="text-[#0088CC]" />;
       default:
         return null;
     }
