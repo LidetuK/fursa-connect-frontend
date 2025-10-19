@@ -27,7 +27,7 @@ const About = () => {
               <p className="mb-4">FursaConnect is a comprehensive social media management platform that offers:</p>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-blue-50 p-6 rounded-lg">
+                <div className="bg-orange-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Social Media Management</h3>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Multi-platform posting</li>
@@ -86,7 +86,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold mb-4">Our Values</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl">🎯</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Focus</h3>
@@ -133,7 +133,7 @@ const About = () => {
               <div className="text-center">
                 <a 
                   href="/signin" 
-                  className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="inline-block bg-[#F76F14] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#E55A0A] transition-colors"
                 >
                   Start Your Free Trial
                 </a>

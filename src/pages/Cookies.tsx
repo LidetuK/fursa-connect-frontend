@@ -9,7 +9,7 @@ const Cookies = () => {
       <div className="container mx-auto px-4 py-16 flex-grow">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6">Cookie Policy</h1>
-          <p className="text-gray-600 mb-6">Last updated: May 8, 2025</p>
+          <p className="text-white mb-6">Last updated: January 15, 2025</p>
 
           <div className="space-y-8">
             <section>
@@ -33,30 +33,30 @@ const Cookies = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">3. Types of Cookies We Use</h2>
               
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
-                <h3 className="text-xl font-semibold mb-3">Strictly Necessary Cookies</h3>
-                <p className="mb-2">These cookies are essential for the website to function and cannot be switched off.</p>
-                <ul className="list-disc pl-6 space-y-1">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Strictly Necessary Cookies</h3>
+                <p className="mb-2 text-gray-700">These cookies are essential for the website to function and cannot be switched off.</p>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
                   <li>Authentication cookies</li>
                   <li>Security cookies</li>
                   <li>Load balancing cookies</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
-                <h3 className="text-xl font-semibold mb-3">Performance Cookies</h3>
-                <p className="mb-2">These cookies collect information about how you use our website.</p>
-                <ul className="list-disc pl-6 space-y-1">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Performance Cookies</h3>
+                <p className="mb-2 text-gray-700">These cookies collect information about how you use our website.</p>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
                   <li>Google Analytics cookies</li>
                   <li>Page load time cookies</li>
                   <li>Error tracking cookies</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Functionality Cookies</h3>
-                <p className="mb-2">These cookies enable enhanced functionality and personalization.</p>
-                <ul className="list-disc pl-6 space-y-1">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Functionality Cookies</h3>
+                <p className="mb-2 text-gray-700">These cookies enable enhanced functionality and personalization.</p>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
                   <li>Language preference cookies</li>
                   <li>Theme preference cookies</li>
                   <li>User interface customization cookies</li>
@@ -79,10 +79,10 @@ const Cookies = () => {
               <h2 className="text-2xl font-semibold mb-4">5. Managing Your Cookie Preferences</h2>
               <p className="mb-4">You can control and manage cookies in several ways:</p>
               
-              <div className="bg-blue-50 p-6 rounded-lg mb-6">
-                <h3 className="text-xl font-semibold mb-3">Browser Settings</h3>
-                <p className="mb-2">Most browsers allow you to:</p>
-                <ul className="list-disc pl-6 space-y-1">
+              <div className="bg-orange-50 border border-orange-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Browser Settings</h3>
+                <p className="mb-2 text-gray-700">Most browsers allow you to:</p>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
                   <li>View and delete cookies</li>
                   <li>Block cookies from specific sites</li>
                   <li>Block third-party cookies</li>
@@ -90,10 +90,10 @@ const Cookies = () => {
                 </ul>
               </div>
 
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Cookie Consent</h3>
-                <p className="mb-2">When you first visit our website, you can:</p>
-                <ul className="list-disc pl-6 space-y-1">
+              <div className="bg-orange-50 border border-orange-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Cookie Consent</h3>
+                <p className="mb-2 text-gray-700">When you first visit our website, you can:</p>
+                <ul className="list-disc pl-6 space-y-1 text-gray-700">
                   <li>Accept all cookies</li>
                   <li>Reject non-essential cookies</li>
                   <li>Customize your cookie preferences</li>

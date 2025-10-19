@@ -10,7 +10,7 @@ const TermsOfService = () => {
       <div className="container mx-auto px-4 py-16 flex-grow">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
-          <p className="text-gray-600 mb-6">Last updated: May 8, 2025</p>
+          <p className="text-white mb-6">Last updated: January 15, 2025</p>
 
           <div className="space-y-8">
             <section>

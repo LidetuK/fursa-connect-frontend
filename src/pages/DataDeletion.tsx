@@ -9,7 +9,7 @@ const DataDeletion = () => {
       <div className="container mx-auto px-4 py-16 flex-grow">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6">Facebook Data Deletion</h1>
-          <p className="text-gray-600 mb-6">Last updated: May 8, 2025</p>
+          <p className="text-white mb-6">Last updated: January 15, 2025</p>
 
           <div className="space-y-8">
             <section>
@@ -18,9 +18,9 @@ const DataDeletion = () => {
                 If you have used Facebook to log in to our application, you can request the deletion of your data through the following methods:
               </p>
               
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
-                <h3 className="text-xl font-semibold mb-3">Option 1: Through Facebook</h3>
-                <ol className="list-decimal pl-6 space-y-2">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Option 1: Through Facebook</h3>
+                <ol className="list-decimal pl-6 space-y-2 text-gray-700">
                   <li>Go to your Facebook Settings</li>
                   <li>Click on "Apps and Websites"</li>
                   <li>Find our app in the list</li>
@@ -28,10 +28,10 @@ const DataDeletion = () => {
                 </ol>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Option 2: Direct Request</h3>
-                <p className="mb-2">Send an email to <a href="mailto:privacy@fursaconnect.com" className="text-blue-600">privacy@fursaconnect.com</a> with:</p>
-                <ul className="list-disc pl-6 space-y-2">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Option 2: Direct Request</h3>
+                <p className="mb-2 text-gray-700">Send an email to <a href="mailto:privacy@fursaconnect.com" className="text-[#F76F14] font-medium">privacy@fursaconnect.com</a> with:</p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>Subject: "Facebook Data Deletion Request"</li>
                   <li>Your Facebook ID or email</li>
                   <li>Your full name</li>
@@ -42,12 +42,14 @@ const DataDeletion = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">What We Delete</h2>
               <p className="mb-4">When you request data deletion, we will remove:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Your Facebook profile information</li>
-                <li>Any data collected through Facebook Login</li>
-                <li>Your activity history</li>
-                <li>Any stored preferences</li>
-              </ul>
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Your Facebook profile information</li>
+                  <li>Any data collected through Facebook Login</li>
+                  <li>Your activity history</li>
+                  <li>Any stored preferences</li>
+                </ul>
+              </div>
             </section>
 
             <section>

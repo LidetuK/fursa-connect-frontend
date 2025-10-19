@@ -80,7 +80,7 @@ const Footer = () => {
         
         <div className="mt-12 border-t border-slate-700 pt-8">
           <p className="text-gray-300 text-center">
-            &copy; {new Date().getFullYear()} SkillLink. All rights reserved.
+            &copy; {new Date().getFullYear()} Fursa Connect. All rights reserved.
           </p>
         </div>
       </div>

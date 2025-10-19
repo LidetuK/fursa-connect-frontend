@@ -64,8 +64,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-orange-100 p-3 rounded-full">
+                    <svg className="w-6 h-6 text-[#F76F14]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
@@ -118,14 +118,14 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-orange-50 p-6 rounded-lg">
                 <h3 className="text-lg font-semibold mb-3">Need Immediate Help?</h3>
                 <p className="text-gray-600 mb-4">
                   Check out our comprehensive help center for instant answers to common questions.
                 </p>
                 <a 
                   href="#" 
-                  className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-block bg-[#F76F14] text-white px-4 py-2 rounded-lg hover:bg-[#E55A0A] transition-colors"
                 >
                   Visit Help Center
                 </a>
@@ -155,7 +155,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F76F14] focus:border-transparent"
                       placeholder="Your full name"
                     />
                   </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F76F14] focus:border-transparent"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F76F14] focus:border-transparent"
                       placeholder="Your company name"
                     />
                   </div>
@@ -203,7 +203,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F76F14] focus:border-transparent"
                     >
                       <option value="">Select a subject</option>
                       <option value="general">General Inquiry</option>
@@ -235,7 +235,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#F76F14] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#E55A0A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
