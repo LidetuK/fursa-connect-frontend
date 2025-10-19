@@ -22,6 +22,9 @@ import DataDeletion from "./pages/DataDeletion";
 import TwitterCallback from '@/pages/twitter/callback';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import SMERegistry from "./pages/SMERegistry";
+import Cookies from "./pages/Cookies";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +51,9 @@ function App() {
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfService />} />
                 <Route path="/data-deletion" element={<DataDeletion />} />
+                <Route path="/cookies" element={<Cookies />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/twitter/callback" element={<TwitterCallback />} />
                 <Route path="/smeregistry" element={<SMERegistry />} />
                 <Route path="*" element={<NotFound />} />

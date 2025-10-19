@@ -30,7 +30,7 @@ const DataDeletion = () => {
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Option 2: Direct Request</h3>
-                <p className="mb-2">Send an email to <a href="mailto:privacy@skilllink.com" className="text-skilllink-green">privacy@skilllink.com</a> with:</p>
+                <p className="mb-2">Send an email to <a href="mailto:privacy@fursaconnect.com" className="text-blue-600">privacy@fursaconnect.com</a> with:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Subject: "Facebook Data Deletion Request"</li>
                   <li>Your Facebook ID or email</li>
@@ -63,7 +63,7 @@ const DataDeletion = () => {
                 For any questions about data deletion, please contact us at:
               </p>
               <p>
-                Email: privacy@skilllink.com<br />
+                Email: privacy@fursaconnect.com<br />
                 Phone: (555) 123-4567
               </p>
             </section>

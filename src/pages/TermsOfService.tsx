@@ -23,7 +23,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">2. Description of Services</h2>
               <p className="mb-4">
-                SkillLink provides web development and digital marketing services, including but not limited to website design, content creation, social media management, and SEO optimization. The features and prices of our services are subject to change without notice.
+                FursaConnect provides social media management and digital marketing services, including but not limited to social media posting, content creation, social media management, and analytics optimization. The features and prices of our services are subject to change without notice.
               </p>
             </section>
 
@@ -57,7 +57,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">6. Intellectual Property</h2>
               <p className="mb-4">
-                The service and its original content, features, and functionality are and will remain the exclusive property of SkillLink and its licensors. The service is protected by copyright, trademark, and other laws. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of SkillLink.
+                The service and its original content, features, and functionality are and will remain the exclusive property of FursaConnect and its licensors. The service is protected by copyright, trademark, and other laws. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of FursaConnect.
               </p>
             </section>
 
@@ -74,7 +74,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">8. Limitation of Liability</h2>
               <p className="mb-4">
-                In no event shall SkillLink, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+                In no event shall FursaConnect, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Your use of or inability to use the service</li>
@@ -104,8 +104,8 @@ const TermsOfService = () => {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <p>
-                Email: terms@skilllink.com<br />
-                Address: 123 SkillLink Way, Digital City, DC 12345
+                Email: terms@fursaconnect.com<br />
+                Address: 123 FursaConnect Way, Digital City, DC 12345
               </p>
             </section>
           </div>

@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
               <p className="mb-4">
-                Welcome to SkillLink. We are committed to protecting your privacy and providing you with a safe online experience. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                Welcome to FursaConnect. We are committed to protecting your privacy and providing you with a safe online experience. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
               <p>
                 Please read this policy carefully. If you do not agree with the terms of this privacy policy, please do not access our website or use our services.
@@ -100,8 +100,8 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-semibold mb-4">9. Contact Us</h2>
               <p className="mb-4">If you have questions or concerns about this Privacy Policy, please contact us at:</p>
               <p className="mb-4">
-                Email: privacy@skilllink.com<br />
-                Address: 123 SkillLink Way, Digital City, DC 12345
+                Email: privacy@fursaconnect.com<br />
+                Address: 123 FursaConnect Way, Digital City, DC 12345
               </p>
             </section>
           </div>
