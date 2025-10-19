@@ -48,6 +48,37 @@ const TermsOfService = () => {
             </section>
 
             <section>
+              <h2 className="text-2xl font-semibold mb-4">4.1. Meta Platform Terms Compliance</h2>
+              <p className="mb-4">
+                When using our service to connect with Facebook or Instagram, you agree that we comply with Meta Platform Terms and Developer Policies. This includes:
+              </p>
+              
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Platform Data Usage</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>We do not sell, license, or purchase Platform Data</li>
+                  <li>We do not use Platform Data for discrimination or surveillance purposes</li>
+                  <li>We only use Platform Data to improve your social media management experience</li>
+                  <li>We do not share Platform Data with third parties without your consent</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Data Management</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Platform Data is retained only as necessary for our services</li>
+                  <li>You can request deletion of your Platform Data at any time</li>
+                  <li>We will delete Platform Data within 30 days of your request</li>
+                  <li>Platform Data is automatically deleted when you disconnect your accounts</li>
+                </ul>
+              </div>
+
+              <p className="mb-4">
+                <strong>Certification:</strong> We certify that we are following the Meta Platform Terms and Developer Policies as well as all other applicable terms and policies.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-semibold mb-4">5. Payment Terms</h2>
               <p className="mb-4">
                 For paid services, you agree to pay all fees or charges to your account based on the fees, charges, and billing terms in effect at the time a fee or charge is due and payable. You are responsible for providing current, complete, and accurate billing and contact information.
@@ -105,7 +136,7 @@ const TermsOfService = () => {
               </p>
               <p>
                 Email: terms@fursaconnect.com<br />
-                Address: 123 FursaConnect Way, Digital City, DC 12345
+                Address: Westlands Business Centre, Nairobi, Kenya
               </p>
             </section>
           </div>

@@ -84,8 +84,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Call Us</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
-                    <p className="text-sm text-gray-500">Mon-Fri, 9AM-6PM EST</p>
+                    <p className="text-gray-600">+254 700 123 456</p>
+                    <p className="text-sm text-gray-500">Mon-Fri, 9AM-6PM EAT</p>
                   </div>
                 </div>
 
@@ -98,8 +98,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Visit Us</h3>
-                    <p className="text-gray-600">123 FursaConnect Way</p>
-                    <p className="text-gray-600">Digital City, DC 12345</p>
+                    <p className="text-gray-600">Westlands Business Centre</p>
+                    <p className="text-gray-600">Nairobi, Kenya</p>
                   </div>
                 </div>
 
@@ -111,8 +111,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EAT</p>
+                    <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM EAT</p>
                     <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>

@@ -60,13 +60,42 @@ const DataDeletion = () => {
             </section>
 
             <section>
+              <h2 className="text-2xl font-semibold mb-4">Meta Platform Terms Compliance</h2>
+              <p className="mb-4">
+                We comply with Meta Platform Terms and Developer Policies regarding data handling:
+              </p>
+              
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Platform Data Usage</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>We do not sell, license, or purchase Platform Data</li>
+                  <li>We do not use Platform Data for discrimination or surveillance</li>
+                  <li>We only use Platform Data to improve your social media management experience</li>
+                  <li>We do not share Platform Data with third parties without your consent</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Compliance Certification</h3>
+                <p className="text-gray-700 mb-2">We certify that we follow Meta Platform Terms and Developer Policies, including:</p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Prohibited uses and processing of Platform Data (Section 3.a)</li>
+                  <li>Restricted Platform Data requirements (Section 3.b)</li>
+                  <li>Sharing Platform Data restrictions (Section 3.c)</li>
+                  <li>Retention, deletion and accessibility of Platform Data (Section 3.d)</li>
+                  <li>Privacy Policy compliance (Section 4)</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p className="mb-4">
                 For any questions about data deletion, please contact us at:
               </p>
               <p>
                 Email: privacy@fursaconnect.com<br />
-                Phone: (555) 123-4567
+                Phone: +254 700 123 456
               </p>
             </section>
           </div>

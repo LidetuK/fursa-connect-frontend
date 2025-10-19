@@ -150,8 +150,8 @@ const DashboardSidebar = ({ services, packageType, activeSection, onSectionChang
           <div className={cn("flex items-center", !expanded && "hidden")}>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dkzw06zke/image/upload/v1748200742/skill_link_logo_hwmy6f.png"
-                alt="SkillLink Logo"
+                src="https://res.cloudinary.com/dklph982o/image/upload/v1757779232/fursa_connect_guakg7.png"
+                alt="fursa connect logo"
                 className="h-12 w-auto animate-glow"
               />
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full animate-pulse" />

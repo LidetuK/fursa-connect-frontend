@@ -28,8 +28,8 @@ const About = () => {
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-orange-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">Social Media Management</h3>
-                  <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Social Media Management</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
                     <li>Multi-platform posting</li>
                     <li>Content scheduling</li>
                     <li>Social media analytics</li>
@@ -38,8 +38,8 @@ const About = () => {
                 </div>
 
                 <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">Content Creation</h3>
-                  <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Content Creation</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
                     <li>AI-powered content suggestions</li>
                     <li>Visual content tools</li>
                     <li>Brand consistency tools</li>
@@ -48,8 +48,8 @@ const About = () => {
                 </div>
 
                 <div className="bg-purple-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">Analytics & Insights</h3>
-                  <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Analytics & Insights</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
                     <li>Performance metrics</li>
                     <li>Audience insights</li>
                     <li>ROI tracking</li>
@@ -58,8 +58,8 @@ const About = () => {
                 </div>
 
                 <div className="bg-orange-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">Team Collaboration</h3>
-                  <ul className="list-disc pl-6 space-y-2">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Team Collaboration</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-700">
                     <li>Multi-user access</li>
                     <li>Approval workflows</li>
                     <li>Role-based permissions</li>
@@ -114,13 +114,13 @@ const About = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Why Choose FursaConnect?</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <ul className="list-disc pl-6 space-y-3">
-                  <li><strong>User-Friendly Interface:</strong> Intuitive design that makes social media management simple and enjoyable</li>
-                  <li><strong>Comprehensive Platform Support:</strong> Manage Facebook, Instagram, Twitter, LinkedIn, and more from one dashboard</li>
-                  <li><strong>Advanced Analytics:</strong> Deep insights into your social media performance with actionable recommendations</li>
-                  <li><strong>Scalable Solutions:</strong> Whether you're a solo entrepreneur or a large enterprise, we have solutions that grow with you</li>
-                  <li><strong>24/7 Support:</strong> Our dedicated support team is always here to help you succeed</li>
-                  <li><strong>Security & Privacy:</strong> Enterprise-grade security to protect your data and your clients' information</li>
+                <ul className="list-disc pl-6 space-y-3 text-gray-700">
+                  <li><strong className="text-gray-900">User-Friendly Interface:</strong> Intuitive design that makes social media management simple and enjoyable</li>
+                  <li><strong className="text-gray-900">Comprehensive Platform Support:</strong> Manage Facebook, Instagram, Twitter, LinkedIn, and more from one dashboard</li>
+                  <li><strong className="text-gray-900">Advanced Analytics:</strong> Deep insights into your social media performance with actionable recommendations</li>
+                  <li><strong className="text-gray-900">Scalable Solutions:</strong> Whether you're a solo entrepreneur or a large enterprise, we have solutions that grow with you</li>
+                  <li><strong className="text-gray-900">24/7 Support:</strong> Our dedicated support team is always here to help you succeed</li>
+                  <li><strong className="text-gray-900">Security & Privacy:</strong> Enterprise-grade security to protect your data and your clients' information</li>
                 </ul>
               </div>
             </section>
@@ -147,16 +147,16 @@ const About = () => {
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">General Inquiries</h3>
-                  <p className="mb-2">Email: info@fursaconnect.com</p>
-                  <p className="mb-2">Phone: (555) 123-4567</p>
-                  <p>Address: 123 FursaConnect Way, Digital City, DC 12345</p>
+                  <h3 className="text-xl font-semibold mb-3 text-white">General Inquiries</h3>
+                  <p className="mb-2 text-white">Email: info@fursaconnect.com</p>
+                  <p className="mb-2 text-white">Phone: +254 700 123 456</p>
+                  <p className="text-white">Address: Westlands Business Centre, Nairobi, Kenya</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Support</h3>
-                  <p className="mb-2">Email: support@fursaconnect.com</p>
-                  <p className="mb-2">Help Center: Available 24/7</p>
-                  <p>Live Chat: Available during business hours</p>
+                  <h3 className="text-xl font-semibold mb-3 text-white">Support</h3>
+                  <p className="mb-2 text-white">Email: support@fursaconnect.com</p>
+                  <p className="mb-2 text-white">Help Center: Available 24/7</p>
+                  <p className="text-white">Live Chat: Available during business hours</p>
                 </div>
               </div>
             </section>

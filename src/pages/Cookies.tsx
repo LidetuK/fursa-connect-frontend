@@ -127,7 +127,7 @@ const Cookies = () => {
               </p>
               <p className="mb-4">
                 Email: privacy@fursaconnect.com<br />
-                Address: 123 FursaConnect Way, Digital City, DC 12345
+                Address: Westlands Business Centre, Nairobi, Kenya
               </p>
             </section>
           </div>

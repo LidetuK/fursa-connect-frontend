@@ -68,6 +68,43 @@ const PrivacyPolicy = () => {
             </section>
 
             <section>
+              <h2 className="text-2xl font-semibold mb-4">4.1. Meta Platform Data Usage</h2>
+              <p className="mb-4">When you connect your Facebook or Instagram accounts through our platform, we comply with Meta Platform Terms and Developer Policies:</p>
+              
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Platform Data Usage</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>We do not sell, license, or purchase Platform Data</li>
+                  <li>We do not use Platform Data for discrimination, eligibility determinations, or surveillance</li>
+                  <li>We only request Platform Data necessary to improve your experience with our social media management services</li>
+                  <li>We do not share Platform Data with third parties without your explicit consent</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border border-gray-200 p-6 rounded-lg mb-6 shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Data Retention and Deletion</h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Platform Data is retained only as long as necessary to provide our services</li>
+                  <li>You can request deletion of your Platform Data at any time</li>
+                  <li>We will delete Platform Data within 30 days of your request</li>
+                  <li>Platform Data is automatically deleted when you disconnect your social media accounts</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Compliance Statement</h3>
+                <p className="text-gray-700 mb-2">We certify that we follow Meta Platform Terms and Developer Policies, including:</p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Prohibited uses and processing of Platform Data (Section 3.a)</li>
+                  <li>Restricted Platform Data requirements (Section 3.b)</li>
+                  <li>Sharing Platform Data restrictions (Section 3.c)</li>
+                  <li>Retention, deletion and accessibility of Platform Data (Section 3.d)</li>
+                  <li>Privacy Policy compliance (Section 4)</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-semibold mb-4">5. Cookies and Tracking Technologies</h2>
               <p className="mb-4">We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
             </section>
@@ -101,7 +138,7 @@ const PrivacyPolicy = () => {
               <p className="mb-4">If you have questions or concerns about this Privacy Policy, please contact us at:</p>
               <p className="mb-4">
                 Email: privacy@fursaconnect.com<br />
-                Address: 123 FursaConnect Way, Digital City, DC 12345
+                Address: Westlands Business Centre, Nairobi, Kenya
               </p>
             </section>
           </div>
