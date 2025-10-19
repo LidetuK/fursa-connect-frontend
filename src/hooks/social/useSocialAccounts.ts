@@ -59,9 +59,14 @@ export const useSocialAccounts = () => {
         if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data.accounts)) {
+            console.log('=== SOCIAL ACCOUNTS LOADED ===');
+            console.log('Raw backend response:', data);
+            console.log('Backend accounts:', data.accounts);
             // Merge with Twitter status
             const otherAccounts = data.accounts.filter(acc => acc.platform !== 'twitter');
             accounts = [...accounts, ...otherAccounts];
+            console.log('Final accounts after merge:', accounts);
+            console.log('=== SOCIAL ACCOUNTS LOADED END ===');
           }
         }
         setSocialAccounts(accounts);

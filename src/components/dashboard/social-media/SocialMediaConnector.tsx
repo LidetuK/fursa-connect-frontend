@@ -63,6 +63,7 @@ const SocialMediaConnector = () => {
       username: found?.screen_name || found?.platform_user_id || '',
     };
     console.log(`getAccountStatus for ${platform}:`, status, 'socialAccounts:', socialAccounts);
+    console.log(`Looking for platform "${platform}" in:`, socialAccounts.map(acc => ({ platform: acc.platform, screen_name: acc.screen_name, platform_user_id: acc.platform_user_id })));
     return status;
   };
 
@@ -92,8 +93,10 @@ const SocialMediaConnector = () => {
       });
       const data = await res.json();
       if (data.success) {
-        // Reload social accounts to update the UI
-        loadUserSocialAccounts();
+        // Wait a moment for database to be updated, then reload social accounts
+        setTimeout(() => {
+          loadUserSocialAccounts();
+        }, 1000);
         alert('Telegram connected successfully!');
       } else {
         alert(data.error || 'Failed to connect Telegram');
