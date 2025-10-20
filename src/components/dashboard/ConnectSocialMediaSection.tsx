@@ -299,7 +299,7 @@ const ConnectSocialMediaSection = () => {
         const res = await fetch('https://fursaconnet-production.up.railway.app/telegram/connect', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ userId: 8, chatId: channelUsername.trim() }), // Use actual user ID
+          body: JSON.stringify({ userId: user.id, chatId: channelUsername.trim() }), // Use actual user ID
         });
         const data = await res.json();
         if (data.success) {

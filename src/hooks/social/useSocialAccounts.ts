@@ -62,6 +62,8 @@ export const useSocialAccounts = () => {
             console.log('=== SOCIAL ACCOUNTS LOADED ===');
             console.log('Raw backend response:', data);
             console.log('Backend accounts:', data.accounts);
+            console.log('Current user ID:', user?.id);
+            console.log('Accounts for current user:', data.accounts.filter(acc => acc.user_id === user?.id));
             // Merge with Twitter status
             const otherAccounts = data.accounts.filter(acc => acc.platform !== 'twitter');
             accounts = [...accounts, ...otherAccounts];
