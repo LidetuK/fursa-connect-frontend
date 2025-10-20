@@ -95,7 +95,8 @@ const SocialMediaConnector = () => {
       const res = await fetch('https://fursaconnet-production.up.railway.app/telegram/connect', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId: user.id, chatId: channelUsername.trim() }),
+        credentials: 'include',
+        body: JSON.stringify({ chatId: channelUsername.trim() }),
       });
       const data = await res.json();
       if (data.success) {
