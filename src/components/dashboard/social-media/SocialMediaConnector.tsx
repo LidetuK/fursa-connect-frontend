@@ -86,6 +86,12 @@ const SocialMediaConnector = () => {
     
     setTelegramConnecting(true);
     try {
+      console.log('=== TELEGRAM CONNECT DEBUG ===');
+      console.log('User object:', user);
+      console.log('User ID being sent:', user.id);
+      console.log('Chat ID being sent:', channelUsername.trim());
+      console.log('=== TELEGRAM CONNECT DEBUG END ===');
+      
       const res = await fetch('https://fursaconnet-production.up.railway.app/telegram/connect', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
