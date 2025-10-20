@@ -1,6 +1,5 @@
-# Alternative Dockerfile with more reliable base images
 # Build stage
-FROM node:18-slim AS builder
+FROM node:18-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -21,7 +20,7 @@ RUN npm run build
 RUN chmod +x copy-health.sh && ./copy-health.sh
 
 # Production stage
-FROM nginx:stable-alpine AS production
+FROM nginx:alpine AS production
 
 # Copy built files from builder stage
 COPY --from=builder /app/dist /usr/share/nginx/html
@@ -43,4 +42,4 @@ RUN mkdir -p /var/run/nginx
 EXPOSE 80
 
 # Start using the startup script
-CMD ["/start.sh"]
+CMD ["/start.sh"] 
