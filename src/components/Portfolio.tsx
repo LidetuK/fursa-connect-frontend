@@ -47,11 +47,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Qatken Properties",
+    title: "Sitc",
     category: "Digital Marketing",
-    image: "https://res.cloudinary.com/dkzw06zke/image/upload/v1748200751/Screenshot_2025-04-18_000735_fbm6wy.png",
-    description: "Comprehensive SEO optimization and content marketing strategy for a SaaS company.",
-    link: "https://qatkenproperties.com/"
+    image: "https://sitc-tvet.ac.ke/Logo.png",
+    description: "Comprehensive SEO optimization and content marketing strategy for a School company.",
+    link: "https://sitc-tvet.ac.ke/"
   },
   {
     id: 5,
@@ -63,11 +63,11 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Awash Group",
+    title: "crescent shores retreats",
     category: "Digital Marketing",
-    image: "https://res.cloudinary.com/dkzw06zke/image/upload/v1748200734/Screenshot_2025-04-18_000847_ayoidd.png",
+    image: "https://crescentshoresretreats.com/wp-content/uploads/2025/04/WhatsApp_Image_2025_09_22_at_16_24_06_70647bc7_removebg_preview.png",
     description: "Multi-platform social media strategy and content creation for product launch.",
-    link: "https://awashgroup.com/"
+    link: "https://crescentshoresretreats.com/"
   },
   {
     id: 7,

@@ -51,7 +51,7 @@ const ConnectSocialMediaSection = () => {
       icon: <Youtube className="w-6 h-6" />,
       color: 'bg-red-500',
       description: 'Connect and manage your YouTube channel',
-      connected: false, // Set to false so Connect button is shown
+      connected: true, // Set to true to show as connected by default
       username: 'SkillLink Channel',
       popular: true
     },
@@ -98,6 +98,13 @@ const ConnectSocialMediaSection = () => {
     console.log('Syncing platforms with socialAccounts:', socialAccounts);
     setPlatforms(prev =>
       prev.map(p => {
+        // Keep Telegram and YouTube as connected by default for presentation
+        if (p.id === 'telegram' || p.id === 'youtube') {
+          const found = socialAccounts.find(acc => acc.platform === p.id);
+          return found
+            ? { ...p, connected: true, username: found.platform_user_id || p.username }
+            : { ...p, connected: true }; // Keep connected even if not found in backend
+        }
         const found = socialAccounts.find(acc => acc.platform === p.id);
         const connected = !!found;
         console.log(`Platform ${p.id}: connected=${connected}, found=`, found);
